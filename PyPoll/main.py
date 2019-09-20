@@ -3,19 +3,21 @@ import os
 
 # input file
 file_path = os.path.join("election_data.csv")
-#output file
+# output file
 output_file_path = "election_data_analysis.txt"
 
-#open file in write mode
+# open file in write mode
 outFile = open(output_file_path, "w+")
 
-# function to write output in console and file
-def printOutput(vLine):
-  print(vLine)
-  outFile.write(vLine)
-  outFile.write("\n")
 
-#dict for storing key as candidate names and value as number of votes
+# function to write output in console and file
+def printOutput(strline):
+    print(strline)
+    outFile.write(strline)
+    outFile.write("\n")
+
+
+# dict for storing key as candidate names and value as number of votes
 candidate_vote_count_d = {}
 
 # read file
